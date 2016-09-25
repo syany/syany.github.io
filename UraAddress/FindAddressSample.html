@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Cache-Control" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>UraAddress - jQuery Address Form using GoogleMap plugin Sample</title>
+<link rel="stylesheet" href="FindAddressSample.css" />
+</head>
+<body>
+<div class="Outline Container">
+  <div class="sample">
+    <form>
+      <table>
+        <tr>
+          <th>郵便番号</th>
+          <td>
+            <input type="text" class="addressform postalcode" name="postalcode" id="postalcode" />
+            <input type="button" class="normalBtn search4map" name="search4map" id="search4map" value="マップから住所を検索する" />
+            <input type="reset" class="normalBtn resetBtn" name="resetBtn" id="resetBtn" value="空白にする" />
+          </td>
+        </tr>
+        <tr>
+          <th>都道府県</th>
+          <td>
+            <input type="text" class="addressform prefecture" name="prefecture" id="prefecture" />
+          </td>
+        </tr>
+        <tr>
+          <th>市町村番地</th>
+          <td>
+            <input type="text" class="addressform cities" name="cities" id="cities" />
+          </td>
+        </tr>
+        <tr>
+          <th>建物名</th>
+          <td>
+            <input type="text" class="addressform buildings" name="buildings" id="buildings" />
+          </td>
+        </tr>
+      </table>
+    </form>
+  </div>
+</div>
+<script src="../lib/js/jquery-1.10.2.js"></script>
+<script src="./FindAddressSample.js"></script>
+</body>
+</html>
