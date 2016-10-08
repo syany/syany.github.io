@@ -132,15 +132,16 @@
      */
     function afterGoogleScript() {
       $('#mapDialog').dialog({
+        title: '地図をクリックして、よろしければ「OK」を押してください。',
         modal: true,
-        height: 445,
-        width : 760,
+        height: 453,
+        width : 718,
         // ダイアログ
         open: function() {
           mapObj = new google.maps.Map(
               document.getElementById('UraAddressMap'), {
                 zoom: 7,
-                center: new google.maps.LatLng(36, 139),
+                center: new google.maps.LatLng(35.6983841, 139.7730348),
                 mapTypeId: google.maps.MapTypeId.ROADMAP
               });
           /**
